@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="apod.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="main__container">
+      <h1 class="page__title">
+        Descubra fotos incríveis tiradas pela NASA!
+        <p class="main__text">Basta escolher uma data e a foto ou vídeo aparecerá!</p>
+        <p class="main__text">Isso mesmo, se você for sortudo(a) até um vídeo poderá ser visto!!</p>
+      </h1>
+    </div>
+  </main>
+  <form class="form">
+    <input name="date" type="date" class="date" id="date">
+    <button type="submit" class="btn" id="btn">Pesquisar</button>
+  </form>
+
+  <div class="container__data">
+    <h2 class="title" id="title"></h2>
+    <iframe class="video" id="video" src=""></iframe>
+    <img class="img" id="image" src="" alt="">
+    <p class="text" id="text"></p>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__text">Neste site foi consumida a API APOD da NASA</p>
+    <p class="footer__text">
+      <a href="https://github.com/anacrln" class="link">Github</a></p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
